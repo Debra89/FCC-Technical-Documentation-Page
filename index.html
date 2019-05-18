@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Debra89</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+ 
+        <nav id="navbar">
+            <header>C# Documentation</header>
+            <ul>
+                <li><a class ="nav-link" href="#Introduction" rel ="internal">Introduction</a></li>
+                <li><a class ="nav-link" href="#What_is_.NET_Framework" rel ="internal">What is .NET Framework</a></li>
+                <li><a class ="nav-link" href="#C#_and_.Net_Version_History" rel ="internal">C# and .Net Version History</a></li>
+<li><a class ="nav-link" href="#Download_and_Install_Visual_Studio" rel ="internal">Download and Install Visual Studio</a></li>
+                <li><a class ="nav-link" href="#C#_Hello_world" rel ="internal">C# Hello world</a></li>
+                <li><a class ="nav-link" href="#C#_Data_Types" rel ="internal">C# Data Types</a> </li>
+                <li><a class ="nav-link" href="#C#_Enum" rel ="internal">C# Enum</a></li>
+                <li><a class ="nav-link" href="#C#_Variables_operator" rel ="internal">C# Variables operator</a></li>
+                
+<li><a class ="nav-link" href="#Reference" rel ="internal">Reference</a></li>
+            </ul>
+        </nav>
+  
+    <main id="main-doc">
+  <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <article>
+                <p>This tutorial will introduce you to .NET framework using C# language.</p>
+                <p> You will also learn to create a C Sharp based web application using .NET framework.</p>
+                <p>This is a complete online course and covers topics like accessing data, classes & objects, file commands, window forms etc.</p>
+                <P>What should I know?</P>
+                <ul>  <li>Basic knowledge of C programming and OOP concept will be an additional help.</li></ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_is_.NET_Framework">
+            <header>What is .NET Framework</header>
+            <article>
+              
+
+                <p>
+                    The .Net framework is a software development platform developed by Microsoft. The framework was meant to create applications, which would run on the Windows Platform. The first version of the .Net framework was released in the year 2002.
+
+                    The version was called .Net framework 1.0.
+                </p>
+                <p>
+                    The .Net framework has come a long way since then, and the current version is 4.7.1.
+
+                    The .Net framework can be used to create both - Form-based and Web-based applications. Web services can also be developed using the .Net framework.
+                </p>
+
+                <p>
+                    The framework also supports various programming languages such as Visual Basic and C#. So developers can choose and select the language to develop the required application. In this chapter, you will learn some basics of the .Net framework.
+                </p>
+                
+                <img src=" https://www.guru99.com/images/c-sharp-net/052416_1343_WhatisNETFr1.png" alt=" .Net framework Architecture" />
+                <p>.net framework architecture diagram</p>
+            </article>
+        </section>
+      
+        <section class=" main-section" id="C#_and_.Net_Version_History">
+            <header>C# and .Net Version History</header>
+          
+            <article>
+                <p>The first version of the .Net framework was released in the year 2002. The version was called .Net framework 1.0.</p>
+                <p>The .Net framework has come a long way since then, and the current version is 4.7.1.
+                </p><p>
+                    For example, in framework 3.5 and onwards a key framework called the Entity framework was released. This framework is used to change the approach in which the applications are developed while working with databases.
+                </p>
+                <p>The biggest advantage of the .Net framework is that it supports Windows platform. Almost everyone works with Windows machines.</p>
+
+                <p>Microsoft always ensures that .Net frameworks are in compliance with all the supported Windows operating systems.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Download_and_Install_Visual_Studio">
+            <header>Download and Install Visual Studio</header>
+            <artcicle>  <p>
+    Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. It is used to develop computer programs for Microsoft Windows. Visual Studio is one stop shop for all applications built on the .Net platform. One can develop, debug and run applications using Visual Studio.
+
+    </p><p>Both Forms-based and web-based applications can be designed and developed using this IDE. The Visual Studio has the below-mentioned features
+        <p>Visual basic installation link: <a href=" https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a>
+</p></artcicle>
+          
+        </section>
+        <section class ="main-section" id="C#_Hello_world">
+            <header>C# Hello world</header>
+          <article>
+            
+            <p>C# is one of the languages provided by Microsoft to work with .Net. This language encompasses a rich set of features, which allows developing different types of applications.
+
+C# is an object-oriented programming language and resembles several aspects of the C++ Language. In this tutorial, we see how to develop our first application.
+
+This will be a basic console application, we will then explore different data types available in the C# language as well as the control flow statements.</p>
+            <p>Let's follow the below mentioned steps to get this example in place</p>
+<ol>
+<li>The first step involves the creation of a new project in Visual Studio. For that, once the Visual Studio is launched, you need to choose the menu option New->Project.</li>
+  <li>The next step is to choose the project type as a Console application. Here, we also need to mention the name and location of our project.</li>
+  <li>Now let's write our code which will be used to display the string "Hello World" in the console application</li>
+  <li>Run your .Net program. To run any program, you need to click the Start button in Visual Studio.</li>
+            </ol>
+            <p>All the below code needs to be entered into the Program.cs file. The code will be used to write "Hello World" when the console application runs.</p>
+            <header>C# Hello World Program</header>
+            <code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class Program
+ { 
+  static void Main(string[] args) 
+  {
+   Console.Write("Hello World");
+
+   Console.ReadKey();
+  }
+ }
+              }</code>
+          </article>
+        </section>
+        <section class = "main-section" id="C#_Data_Types">
+            <header>C# Data Types</header>
+          <article><p>The C# language comes with a set of Basic data types. These data types are used to build values which are used within an application. Let's explore the basic data types available in C#. For each example, we will modify just the main function in our Program.cs file.</p>
+            <ol>
+              <li>Integer</li>
+              <p>An Integer data types are used to work with numbers. In this case, the numbers are whole numbers like 10, 20 or 30. In C#, the datatype is denoted by the Int32 keyword. Below is an example of how this datatype can be used. </p>
+                <p class ="example">In our example, we will define an Int32 variable called num. We will then assign an Integer value to the variable and then display it accordingly.</p> <code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class Program
+ { 
+  static void Main(string[] args) 
+  {
+   Int32 num=30;
+   Console.Write(num);  
+   
+   Console.ReadKey();
+  }
+ }
+}</code>
+              <li>Double</li>
+              <p>A double data type is used to work with decimals. In this case, the numbers are whole numbers like 10.11, 20.22 or 30.33. In C#, the datatype is denoted by the keyword "Double". Below is an example of this datatype</p>
+
+<p class ="example">In our example, we will define a double variable called num. We will then assign a Double value to the variable and then display it accordingly.
+
+              </p> <code>sing System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class Program
+ { 
+  static void Main(string[] args) 
+  {
+   double num=30.33;
+   Console.Write(num); 
+   
+   Console.ReadKey();
+  }
+ }
+}</code>
+              <li>Boolean</li>
+              <p>A boolean data type is used to work with Boolean values of true and false. In C#, the datatype is denoted by the Boolean keyword. Below is an example of this datatype can be used.</p> <p class ="example"> In our example, we will define a Boolean variable called 'status.' We will then assign a boolean value to the variable and then display it accordingly.</p>
+              <code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class Program
+  { 
+   static void Main(string[] args) 
+   {
+    Boolean status=true;
+    Console.Write(status);
+    
+    Console.ReadKey();
+   }
+  }
+}</code>
+              <li>String</li>
+              <p>A String data type is used to work with String values. In C#, the datatype is denoted by the keyword 'String'. Below is an example of this datatype.</p><p class ="example">In our example, we will define a String variable called 'message.' We will then assign a String value to the variable and then display it accordingly.</p><code>
+      using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class program
+ {
+  static void Main(string[] args)
+  {
+   String message="Hello";
+   Console.Write(message);
+   
+   Console.ReadKey();
+  }
+ }
+}        
+              </code>          </ol>
+          </article>
+        </section>
+<section class="main-section" id="C#_Enum">
+  <header>C# Enum</header>
+  <article>
+    <p>
+An enumeration is used in any programming language to define a constant set of values. For example, the days of the week can be defined as an enumeration and used anywhere in the program. In C#, the enumeration is defined with the help of the keyword 'enum'.</p>
+    <p class ="example">In our example, we will define an enumeration called days, which will be used to store the days of the week. For each example, we will modify just the main function in our Program.cs file.</p> <Code> using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class Program 
+ {
+  enum Days{Sun,Mon,tue,Wed,thu,Fri,Sat};
+  
+  static void Main(string[] args) 
+  {
+   Console.Write(Days.Sun);
+   
+   Console.ReadKey();
+  }
+ }
+}</code>
+  </article>
+      </section>
+     <section class="main-section" id="C#_Variables_operator">
+       <header>C# Variables operator</header>
+        <article>
+          <p>A variable is a name given to a storage area that is used to store values of various data types. Each variable in C# needs to have a specific type, which determines the size and layout of the variable's memory.</p>
+          <p class ="example">In our example, we will define two variables, one of the type 'string' and the other of the type 'Integer'. We will then display the values of these variables to the console. For each example, we will modify just the main function in our Program.cs file.
+
+          </p> <code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace DemoApplication
+{
+ class Program 
+ {
+  static void Main(string[] args) 
+  {
+   String message="The value is ";
+   Int32 val=30;
+   
+   Console.Write(message+val);
+   Console.ReadKey();
+  }
+ }
+} </code>
+        </article>
+      </section>
+ 
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          
+          <p><li>All the documentation from this page is taken from <a href ="https://www.guru99.com/c-sharp-tutorial.html" target ="_blank"></a>C# Tutorial for Beginners</li></p>
+        </article>
+      </section>
+      <footer>copyright Doris @freeCodeCamp</footer>
+    </main>
+  
+  
+
+</body>
+
+</html>
